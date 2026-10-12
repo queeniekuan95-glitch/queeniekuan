@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Queenie | Creative Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: #F8F5ED;
+      color: #252326;
+      font-family: 'Montserrat', sans-serif;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 28px 8%;
+    }
+    .logo { font-size: 24px; font-weight: 700; }
+    nav a { color: inherit; text-decoration: none; margin-left: 20px; }
+    .hero { padding: 100px 8%; position: relative; }
+    .tag { font-weight: 700; color: #8265D1; }
+    h1, h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      letter-spacing: -0.05em;
+    }
+    h1 { font-size: clamp(55px, 9vw, 130px); line-height: .98; margin: 30px 0; }
+    h1 span { color: #FF754A; }
+    .hero p { font-size: 18px; max-width: 550px; line-height: 1.8; }
+    .button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 17px 30px;
+      background: #9B83E8;
+      border-radius: 40px;
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      transition: transform .3s;
+    }
+    .button:hover { transform: translateY(-5px) rotate(-2deg); }
+    section { padding: 75px 8%; }
+    h2 { font-size: clamp(40px, 6vw, 75px); margin: 0 0 35px; }
+    .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px; }
+    .project {
+      padding: 25px;
+      border-radius: 25px;
+      background: #E8DFFA;
+      transition: transform .3s;
+    }
+    .project:nth-child(2) { background: #FFE1C9; }
+    .project:nth-child(3) { background: #F7D95B; }
+    .project:nth-child(4) { background: #D6E9D4; }
+    .project:hover { transform: translateY(-8px); }
+    .visual {
+      height: 240px;
+      border: 2px dashed #777;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+    .project h3 { font-size: 24px; }
+    .about { background: #9B83E8; }
+    .about p { max-width: 750px; font-size: 19px; line-height: 1.9; }
+    .contact { background: #FF754A; text-align: center; }
+    .contact a { color: #252326; }
+    footer { padding: 30px 8%; text-align: center; }
+    @media(max-width: 700px) {
+      nav { padding: 22px 6%; }
+      nav a { margin-left: 10px; font-size: 12px; }
+      .hero { padding: 75px 6%; }
+      section { padding: 60px 6%; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">QUEENIE ✳</div>
+    <div>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="hero">
+      <div class="tag">CONTENT CREATOR × GRAPHIC DESIGNER</div>
+      <h1>I MAKE<br><span>IDEAS</span><br>LOOK GOOD.</h1>
+      <p>Hey, I'm Queenie! I bring creative ideas to life through visual storytelling, content creation and graphic design.</p>
+      <a class="button" href="#work">EXPLORE MY WORK ↗</a>
+    </div>
+
+    <section id="work">
+      <h2>SELECTED WORK ✳</h2>
+      <div class="grid">
+        <article class="project">
+          <div class="visual">YOUR VIDEO PROJECT</div>
+          <h3>Content Creation</h3>
+          <p>Short-form videos, storytelling and creative concepts.</p>
+        </article>
+        <article class="project">
+          <div class="visual">YOUR DESIGN PROJECT</div>
+          <h3>Graphic Design</h3>
+          <p>Creative visuals and social media designs.</p>
+        </article>
+        <article class="project">
+          <div class="visual">YOUR SOCIAL MEDIA PROJECT</div>
+          <h3>Social Media</h3>
+          <p>Content planning and engaging social campaigns.</p>
+        </article>
+        <article class="project">
+          <div class="visual">YOUR FEATURED PROJECT</div>
+          <h3>Featured Projects</h3>
+          <p>A selection of my favorite creative work.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2>A LITTLE ABOUT ME.</h2>
+      <p>I'm a Content Creator and Graphic Designer with 2 years of experience in content creation and over 5 years in graphic design. I love combining creative ideas, storytelling and design to create engaging content.</p>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>LET'S CREATE SOMETHING COOL!</h2>
+      <p>Have a project or opportunity in mind?</p>
+      <p>Let's connect and make it happen.</p>
+    </section>
+  </main>
+
+  <footer>© 2026 Queenie. Made with creativity ✳</footer>
+</body>
+</html>
